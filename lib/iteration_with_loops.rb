@@ -10,7 +10,7 @@ def join_nested_strings(src)
 
      while element_index < src[row_index][element_index] do
 
-        if src[row_index][element_index] === ""
+        if src[row_index][element_index].kind_of?(String)
          new_array << src[row_index][element_index]
        else
          inner_result += src[row_index][element_index]
