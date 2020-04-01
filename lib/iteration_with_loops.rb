@@ -15,5 +15,5 @@ while row_index < src.count do
  new_array << new_string
  row_index += 1
 end
-new_array
+new_array.join(" ")
 end
