@@ -18,9 +18,9 @@ def join_nested_strings(src)
         end
          element_index += 1
       end
-       outer_result + inner_result.to_s
+       outer_result + inner_result
      row_index += 1
    end
- outer_result 
+ outer_result
 #new_array
 end
