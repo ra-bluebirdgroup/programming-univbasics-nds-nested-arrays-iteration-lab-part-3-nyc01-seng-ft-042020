@@ -9,7 +9,7 @@ def join_nested_strings(src)
      inner_result = ""
      while element_index < src[row_index][element_index] do
         if src[row_index][element_index] == type("")
-         inner_result + (src[row_index][element_index])
+         inner_result + src[row_index][element_index]
         end
          element_index += 1
       end
