@@ -18,6 +18,7 @@ def join_nested_strings(src)
         end
          element_index += 1
       end
+       outer_result + inner_result.to_s
      row_index += 1
    end
  outer_result + inner_result.to_s
