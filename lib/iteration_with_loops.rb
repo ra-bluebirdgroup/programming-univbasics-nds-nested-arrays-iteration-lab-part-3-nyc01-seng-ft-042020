@@ -12,7 +12,7 @@ def join_nested_strings(src)
 
         if src[row_index][element_index].kind_of?(String)
           puts "ok"
-         new_array << src[row_index][element_index]
+         inner_result += src[row_index][element_index]
        else
          inner_result += src[row_index][element_index]
         end
