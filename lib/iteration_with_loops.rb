@@ -12,10 +12,7 @@ def join_nested_strings(src)
 
         if src[row_index][element_index].kind_of?(String)
          inner_result = src[row_index][element_index]
-         outer_result + inner_result
-       else
-         inner_result += src[row_index][element_index]
-         outer_result + inner_result
+         outer_result.cocat(inner_result)
         end
          element_index += 1
       end
