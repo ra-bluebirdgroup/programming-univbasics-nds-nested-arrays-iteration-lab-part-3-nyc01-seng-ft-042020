@@ -11,10 +11,11 @@ def join_nested_strings(src)
      while element_index < src[row_index][element_index] do
 
         if src[row_index][element_index].kind_of?(String)
-
          inner_result = src[row_index][element_index]
+         outer_result + inner_result
        else
          inner_result += src[row_index][element_index]
+         outer_result + inner_result
         end
          element_index += 1
       end
