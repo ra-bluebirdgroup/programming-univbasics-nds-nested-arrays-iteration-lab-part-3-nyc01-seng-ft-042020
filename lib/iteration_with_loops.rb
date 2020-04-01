@@ -20,6 +20,6 @@ def join_nested_strings(src)
       end
      row_index += 1
    end
- inner_result + "ok"
+ outer_result + "ok"
 #new_array
 end
