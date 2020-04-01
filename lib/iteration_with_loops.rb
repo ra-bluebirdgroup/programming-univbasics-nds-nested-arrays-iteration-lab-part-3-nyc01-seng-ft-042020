@@ -3,7 +3,7 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
  new_array = [ ]
    row_index = 0
- inner_result = "hello"
+ outer_result = "hello"
 
    while src.count < row_index do
      element_index = 0
@@ -11,8 +11,8 @@ def join_nested_strings(src)
      while element_index < src[row_index][element_index] do
 
         if src[row_index][element_index].kind_of?(String)
-          puts "ok"
-         inner_result + src[row_index][element_index]
+
+         inner_result = src[row_index][element_index]
        else
          inner_result += src[row_index][element_index]
         end
