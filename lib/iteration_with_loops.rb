@@ -21,6 +21,6 @@ def join_nested_strings(src)
        outer_result + inner_result.to_s
      row_index += 1
    end
- outer_result + inner_result.to_s
+ outer_result 
 #new_array
 end
